@@ -9,6 +9,16 @@ namespace Namespace1
 	{
 	public:
 
+		///
+		// Run with /TestCaseFilter:"Owner=OwnerName"  => test is found.
+		// Run with /TestCaseFilter:"TestCategory=Cat" => test is not found.
+		///
+		BEGIN_TEST_METHOD_ATTRIBUTE(TestMethod1)
+			TEST_OWNER(L"FailsIntermittently")             // Recognized
+			TEST_PRIORITY(1)                               // Recognized
+			TEST_METHOD_ATTRIBUTE(L"TestCategory", L"Cat") // Ignored
+			TEST_DESCRIPTION(L"MayFail")                   // Ignored
+		END_TEST_METHOD_ATTRIBUTE()
 		TEST_METHOD(TestMethod1)
 		{
 			Assert::IsTrue(false);

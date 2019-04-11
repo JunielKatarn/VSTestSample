@@ -14,6 +14,9 @@ namespace Namespace1
 			Assert::IsTrue(true);
 		}
 
+		BEGIN_TEST_METHOD_ATTRIBUTE(TestMethod2)
+			TEST_OWNER(L"FailsIntermittently")             // Recognized
+		END_TEST_METHOD_ATTRIBUTE()
 		TEST_METHOD(TestMethod2)
 		{
 			Assert::IsTrue(false);
