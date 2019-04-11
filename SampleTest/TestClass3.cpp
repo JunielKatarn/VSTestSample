@@ -3,20 +3,20 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace Namespace1
+namespace Namespace2
 {
-	TEST_CLASS(TestClass1)
+	TEST_CLASS(TestClass3)
 	{
 	public:
-		
-		TEST_METHOD(TestMethod1)
+
+		TEST_METHOD(TestMethod3)
 		{
 			Assert::IsTrue(true);
 		}
 
-		TEST_METHOD(TestMethod2)
+		TEST_METHOD(TestMethod4)
 		{
-			Assert::IsTrue(false);
+			Assert::IsTrue(true);
 		}
 	};
 }

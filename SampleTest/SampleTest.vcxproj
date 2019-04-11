@@ -168,6 +168,8 @@
     </ClCompile>
     <ClCompile Include="TestClass1.cpp" />
     <ClCompile Include="TestClass2.cpp" />
+    <ClCompile Include="TestClass3.cpp" />
+    <ClCompile Include="TestClass4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

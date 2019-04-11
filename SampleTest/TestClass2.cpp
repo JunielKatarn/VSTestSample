@@ -11,7 +11,7 @@ namespace Namespace1
 
 		TEST_METHOD(TestMethod1)
 		{
-			Assert::IsTrue(true);
+			Assert::IsTrue(false);
 		}
 
 		TEST_METHOD(TestMethod2)
